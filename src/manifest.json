@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Aftonbladet Adblocker blocker buster buster",
+  "description": "This extension removes aftonbladets blocking of adblockers from a aftonbladet.se article",
+  "version": "1.6",
+  "content_scripts": [
+    {
+      "matches": ["http://www.aftonbladet.se/*", "https://www.aftonbladet.se/*"],
+      "js": ["main.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["activeTab"]
+}
